@@ -1,0 +1,70 @@
+@font-face {
+  font-family: digital-7;
+  src: url(./assets/fonts/chrono/digital-7.ttf);
+}
+
+@font-face {
+  font-family: AlegreyaSans-regular;
+  src: url(./assets/fonts/paragraphes/AlegreyaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: BigShouldersDisplay-VariableFont_wght;
+  src: url(./assets/fonts/titres/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --font-chrono: digital-7;
+  --font-paragraphe: AlegreyaSans-Regular;
+  --font-title: BigShouldersDisplay-VariableFont_wght;
+}
+
+body {
+  font-family: var(--font-title);
+  background-color: black;
+}
+
+.Bgmedia {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .Bgmedia {
+    display: block;
+    z-index: 3;
+    width: 50%;
+  }
+
+  .container__chrono {
+    display: none;
+  }
+
+  .planete {
+    display: none;
+  }
+
+  .navbar__link {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .Bgvideo {
+    display: none;
+  }
+}
